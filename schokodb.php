@@ -6,6 +6,9 @@ Version: 1.0
 Description: Ein Plugin fuer die SchokoDB
 */
 
+/**
+	Diese Funktion zeigt die aktuellen Schnaeppchen an
+*/
 function schokoSchnaeppchen_func() {
 	global $wpdb;
 	ob_start();
@@ -48,6 +51,9 @@ function schokoSchnaeppchen_func() {
 	return ob_get_clean();
 }
 
+/**
+	Diese Funktion liefert abhängig von der ausgewählten Kunstschau eine Auflistung der Kunstwerke und der freien Plätze erhalten
+*/
 function schokoKunstschau_func() {
 	global $wpdb;
 	ob_start();
